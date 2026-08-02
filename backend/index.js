@@ -9,7 +9,7 @@ const Student = require("./models/student");
 
 const app = express();
 app.use(cors({
-  origin: "https://student-management-portal-101203.netlify.app/",
+  origin: "https://student-management-portal-101203.netlify.app",
   methods: ["GET", "POST", "PUT", "DELETE"],
 }));
 app.use(express.json());
