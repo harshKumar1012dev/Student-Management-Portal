@@ -18,7 +18,7 @@ function StudentForm({ onSubmit, editing }) {
     } else {
       onSubmit(form);
     }
-    setForm({ name: "", email: "", course: "" });
+    setForm({ name: "", email: "", course: "" })
   };
 
   return (
