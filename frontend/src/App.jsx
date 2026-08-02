@@ -3,7 +3,7 @@ import axios from "axios";
 import StudentForm from "./Components/StudentForm";
 import StudentList from "./Components/StudentList";
 
-const API = "http://localhost:5000/students";
+const API = "https://student-management-portal-2p03.onrender.com/students";
 
 function App() {
   const [students, setStudents] = useState([]);
