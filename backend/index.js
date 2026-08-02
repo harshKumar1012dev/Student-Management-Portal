@@ -8,7 +8,10 @@ const PORT = parseInt(process.env.PORT, 10) || 5000;
 const Student = require("./models/student");
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: "https://student-management-portal-101203.netlify.app/",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+}));
 app.use(express.json());
 
 let useMemoryStore = false;
